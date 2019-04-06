@@ -53,8 +53,5 @@ public class MainActivity extends AppCompatActivity implements ILoginView {
         Toasty.error(this,message,Toast.LENGTH_SHORT).show();
     }
 
-    /*@Override
-    public void onLoginResult(String message) {
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
-    }*/
+    
 }

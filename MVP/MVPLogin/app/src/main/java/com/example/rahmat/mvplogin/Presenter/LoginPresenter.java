@@ -16,8 +16,8 @@ public class LoginPresenter implements ILoginPresenter {
     @Override
     public void onLogin(String email, String password) {
         User user = new User(email,password);
-        //boolean isLoginSuccess = user.isValidData();
-        int loginCode = user.isValidData();
+        
+		int loginCode = user.isValidData();
 
         if(loginCode == 0)
             loginView.onLoginError("You must enter your Email");
